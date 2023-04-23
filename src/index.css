@@ -1,0 +1,163 @@
+@font-face {
+  font-family: jostFont;
+  src: url(./Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: JosefinSansFont;
+  src: url(./JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: JosefinSansLight;
+  src: url(./JosefinSans-Regular.ttf);
+}
+
+.navbar-brand {
+  font-family: jostFont;
+  padding-top: 10x;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* position: fixed; */
+  text-transform: uppercase !important;
+  font-size: 15px !important;
+  font-weight: 500;
+  background-color: white;
+}
+.navbar-brand.Scrolled{
+background: green;
+}
+
+.btn-danger {
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9em;
+  background-color: #9f1b32;
+  margin-right: 1em;
+  height: 3.2em;
+  width: 11em;
+  border: 0;
+}
+
+.img1 {
+  width: 100%;
+  height: 60%;
+}
+
+.logoImg {
+  height: 4.6em;
+  width: 4.6em !important;
+  margin-left: 1.6em;
+  margin-bottom: 0px !important;
+}
+
+.orderNow {
+  height: 21.4em;
+  color: white;
+  width: 35.43em;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  position: absolute;
+  top: 26%;
+  left: 20%;
+  padding: 20px;
+}
+
+.orderNowHead {
+  font-family: JosefinSansFont, Sans-serif;
+}
+
+.EightShapes {
+  position: relative;
+  /* padding-top: 5.5em; */
+}
+
+.orderNowPara {
+  font-family: JosefinSansLight;
+  padding-top: 0.5em;
+  font-size: 1.3em;
+}
+
+.deliveroo {
+  height: 10em;
+  width: 10em;
+  border: 2px solid black;
+  border-radius: 0.3em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.deliverooImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.ourStory {
+  background-color: #f9f6f0;
+  height: 40em;
+}
+
+.story {
+  font-size: 3em;
+  font-family: JosefinSansLight, Sans-serif;
+  text-align: start;
+
+}
+
+.storyPara {
+  font-family: jostFont, Sans-serif;
+  font-size: 1.05em;
+  text-align: start;
+}
+
+.ourStoryImg {
+  height: 28em;
+  
+}
+
+.food {
+  font-family: jostFont, Sans-serif;
+  font-size: 2.7em;
+  padding-bottom: 0.8em;
+  padding-top: 2em;
+
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  padding-top: 5em;
+}
+
+.owl-nav {
+  font-size: 3em;
+  border-radius: 20%;
+
+}
+
+.owl-prev {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  height: 100%;
+  width: 3.3%;
+  color: white !important;
+}
+
+.owl-next {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.7) !important;
+  height: 100%;
+  width: 3.3%;
+  color: white !important;
+}
+.owl-carousel .owl-item img{
+  padding-top: 0px !important;
+}
