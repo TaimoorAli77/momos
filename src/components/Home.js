@@ -8,10 +8,16 @@ import Carousol from './Carousol';
 const Home = () => {
   return (
     <React.Fragment>
-      <div className='EightShapes'>
+      <div className='EightShapes '>
         <img className='img1' src={imgSrc} alt='missing' />
         <OrderNow />
-      </div>
+
+      </div>  <div>
+        <i class="fa-solid fa-angle-up scrolledArrow"></i>
+
+
+        </div>
+     
       <div className='container'>
         <UberEats />
       </div>
@@ -24,6 +30,8 @@ const Home = () => {
       <div>
       <Carousol />
       </div>
+    
+
     </React.Fragment>
   );
 }
