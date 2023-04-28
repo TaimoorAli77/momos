@@ -43,15 +43,29 @@
     <script>
       $(document).ready(function(){
         
-        $(".owl-carousel").owlCarousel({
+        $("#box-1").owlCarousel({
         loop: true,
         nav: true,
         items: 5,
         margin:0,
         autoplay:true,
-        autoplayTimeout:2000,
+        autoplayTimeout:1800,
         autoplayHoverPause:true,
         dots:false
+      });
+
+      $("#box-2").owlCarousel({
+        loop: true,
+        nav: true,
+        items: 3,
+        margin:5,
+        autoplay:true,
+        autoplayTimeout:3500,
+        autoplayHoverPause:true,
+        dots:false,
+        rewind:true,
+        startPosition:7
+
       });
     });
     </script>

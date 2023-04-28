@@ -25,19 +25,20 @@
   background-color: white;
 }
 
-.navbar{
+.navbar {
   height: 5.3em;
   position: fixed;
-  z-index:  9;
+  z-index: 9;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #fff;
   transition: background-color 0.2s ease-in-out;
 }
-.navbar.scrolled{
+
+.navbar.scrolled {
   background-color: green;
-  }
+}
 
 .btn-danger {
   border-radius: 4px;
@@ -127,7 +128,7 @@
 
 .ourStoryImg {
   height: 28em;
-  
+
 }
 
 .food {
@@ -138,18 +139,18 @@
 
 }
 
-.owl-carousel .owl-item img {
+#box-1 .owl-item img {
   display: block;
   padding-top: 5em;
 }
 
-.owl-nav {
+#box-1 .owl-nav {
   font-size: 3em;
   border-radius: 20%;
 
 }
 
-.owl-prev {
+#box-1 .owl-prev {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -159,7 +160,7 @@
   color: white !important;
 }
 
-.owl-next {
+#box-1 .owl-next {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -168,17 +169,166 @@
   width: 3.3%;
   color: white !important;
 }
-.owl-carousel .owl-item img{
+
+#box-1 .owl-item img {
   padding-top: 0px !important;
 }
-.scrolledArrow{
+
+.scrolledArrow {
   position: fixed;
-  bottom:3%;
+  bottom: 3%;
   right: 3%;
-color: white;
-background: #9f1b32;
+  color: white;
+  background: #9f1b32;
   height: 2em;
   width: 2em;
   text-align: center;
   padding: 8px;
+}
+.img-inlin {
+  height: 1em;
+  padding-right: 1.5px !important;
+}
+.img-star1{
+  display: flex;
+  flex-direction: row;
+
+}
+.inlin{
+  display: inline;
+}
+.all-inline{
+justify-content: center;
+}
+.Googleimg{
+  height: 2.2em;
+}
+
+.excellent{
+  margin-top: 0.39em;
+  margin-bottom: -0.1em;
+}
+
+
+.img-star {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transform: translate(0.5em, 75px);
+}
+
+.inlin {
+  display: inline;
+}
+
+.containr {
+  height: 30em;
+  background: gray;
+}
+
+.box {
+
+  height: 14em;
+  width: 15em;
+  background: #efefef;
+  border-radius: 0.2em;
+  position: relative;
+}
+
+.custImg {
+  position: absolute;
+  top: 0.9em;
+  left: 0.7em;
+  height: 2.6em !important;
+  width: 2.6em !important;
+}
+
+.custName {
+  position: absolute;
+  transform: translate(65px, 18px);
+  font-size: 1.1em;
+}
+.custDatePost{
+  position: absolute;
+  transform: translate(67px, 40px);
+  color: #848484;
+  font-size: 0.8em;
+  
+}
+.gImg {
+  position: absolute;
+  top: 0.9em;
+  right: 0.6em;
+  height: 1.7em;
+  width: 1.7em !important;
+}
+.customer-review{
+  position: absolute;
+  height: 4.8em;
+  width: 91%;
+  text-align: left;
+  color: #2e312e;
+  transform: translate(5%,151%);
+  font-size: 0.9em;
+}
+.custRThoughts{
+  display: flex;
+  text-align: justify;    
+text-align: justify;
+}
+.btnReadMore{
+  border: none;
+  cursor: pointer;
+  color: #848484;
+  position: absolute;
+  bottom: 0px;
+  font-size: 0.8em;
+
+  
+}
+.btnReadMore:hover{
+  text-decoration: underline;
+
+}
+#box-2{
+  position: relative;
+}
+#box-2 .owl-nav {
+  display: block;
+  font-size: 3.4em;
+  color: #d7d7d7;
+}
+
+#box-2 .owl-prev{
+  position: absolute;
+  top: 30%;
+  left: -0.6em;
+}
+#box-2 .owl-next{
+  position: absolute;
+  top: 30%;
+  right: -0.47em;
+}
+.orderApps{
+  height: 50em;
+  width: 100%;
+  background: #f9f6f0;
+}
+.customerReviewHeight{
+  height: 23em;
+}
+
+.textOrder{
+  font-size: 3em;
+  padding-top: 3em;
+  text-align: center;
+  font-family: jostFont;
+
+}
+.faMarker p{
+  margin-left: 3.3em;
+}
+.faMarker i{
+  color: #9f1b32 !important;
+
 }

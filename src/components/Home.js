@@ -5,6 +5,8 @@ import UberEats from './UberEats';
 import Who from './Who';
 import Food from './Food';
 import Carousol from './Carousol';
+import Reviews from './Reviews';
+import OrderNowTwo from './order/OrderNowTwo';
 const Home = () => {
   return (
     <React.Fragment>
@@ -30,7 +32,13 @@ const Home = () => {
       <div>
       <Carousol />
       </div>
-    
+      <div  className='py-5'>
+        <Reviews />
+      </div>
+
+<div>
+  <OrderNowTwo />
+</div>
 
     </React.Fragment>
   );

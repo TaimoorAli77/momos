@@ -17,7 +17,7 @@ const Carousol = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
-                        <div className="owl-carousel">
+                        <div id="box-1" className="owl-carousel">
                                 <ImagesEat  src={img1} alt="Missing Carousel"/>
                                 <ImagesEat  src={img2} alt="Missing Carousel"/>
                                 <ImagesEat  src={img3} alt="Missing Carousel"/>
