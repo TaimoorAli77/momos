@@ -13,6 +13,11 @@
   src: url(./JosefinSans-Regular.ttf);
 }
 
+@font-face {
+  font-family: JosefinSansFontLight;
+  src: url(./JosefinSans-Medium.ttf);
+}
+
 .navbar-brand {
   font-family: jostFont;
   padding-top: 10x;
@@ -174,37 +179,73 @@
   padding-top: 0px !important;
 }
 
-.scrolledArrow {
+.scrolledArrow1 {
   position: fixed;
-  bottom: 3%;
-  right: 3%;
+  bottom: 2.5em;
+  right: 4em;
   color: white;
   background: #9f1b32;
   height: 2em;
   width: 2em;
   text-align: center;
+  z-index: 2;
   padding: 8px;
 }
+
+.scRol {
+  background: #9f1b32 ;
+  color: white ;
+  height: 2.4em;
+  width: 2.4em;
+  text-align: center;
+  padding: 12px;
+  border-radius: 0.2em;
+  font-size: 1.1em;
+  font-family: JosefinSansFontLight, Sans-serif;
+  bottom: 1.7em;
+
+
+}
+
+.scrolledArrow2 {
+  position: absolute;
+  right: 6em;
+}
+
+.scrolledArrow3 {
+  position: absolute;
+  right: 8.8em;
+}
+
+.scrolledArrow:hover {
+  cursor: pointer;
+  background: #6c0440
+}
+
 .img-inlin {
   height: 1em;
   padding-right: 1.5px !important;
 }
-.img-star1{
+
+.img-star1 {
   display: flex;
   flex-direction: row;
 
 }
-.inlin{
+
+.inlin {
   display: inline;
 }
-.all-inline{
-justify-content: center;
+
+.all-inline {
+  justify-content: center;
 }
-.Googleimg{
+
+.Googleimg {
   height: 2.2em;
 }
 
-.excellent{
+.excellent {
   margin-top: 0.39em;
   margin-bottom: -0.1em;
 }
@@ -248,13 +289,15 @@ justify-content: center;
   transform: translate(65px, 18px);
   font-size: 1.1em;
 }
-.custDatePost{
+
+.custDatePost {
   position: absolute;
   transform: translate(67px, 40px);
   color: #848484;
   font-size: 0.8em;
-  
+
 }
+
 .gImg {
   position: absolute;
   top: 0.9em;
@@ -262,21 +305,24 @@ justify-content: center;
   height: 1.7em;
   width: 1.7em !important;
 }
-.customer-review{
+
+.customer-review {
   position: absolute;
   height: 4.8em;
   width: 91%;
   text-align: left;
   color: #2e312e;
-  transform: translate(5%,151%);
+  transform: translate(5%, 151%);
   font-size: 0.9em;
 }
-.custRThoughts{
+
+.custRThoughts {
   display: flex;
-  text-align: justify;    
-text-align: justify;
+  text-align: justify;
+  text-align: justify;
 }
-.btnReadMore{
+
+.btnReadMore {
   border: none;
   cursor: pointer;
   color: #848484;
@@ -284,51 +330,128 @@ text-align: justify;
   bottom: 0px;
   font-size: 0.8em;
 
-  
+
 }
-.btnReadMore:hover{
+
+.btnReadMore:hover {
   text-decoration: underline;
 
 }
-#box-2{
+
+#box-2 {
   position: relative;
 }
+
 #box-2 .owl-nav {
   display: block;
   font-size: 3.4em;
   color: #d7d7d7;
 }
 
-#box-2 .owl-prev{
+#box-2 .owl-prev {
   position: absolute;
   top: 30%;
   left: -0.6em;
 }
-#box-2 .owl-next{
+
+#box-2 .owl-next {
   position: absolute;
   top: 30%;
   right: -0.47em;
 }
-.orderApps{
-  height: 50em;
+
+.orderApps {
+  height: 60em;
   width: 100%;
   background: #f9f6f0;
 }
-.customerReviewHeight{
-  height: 23em;
+
+.customerReviewHeight {
+  height: 29em;
 }
 
-.textOrder{
+.textOrder {
   font-size: 3em;
   padding-top: 3em;
   text-align: center;
   font-family: jostFont;
 
 }
-.faMarker p{
-  margin-left: 3.3em;
-}
-.faMarker i{
-  color: #9f1b32 !important;
 
+.faMarker p {
+  margin-left: 2.7em;
+  font-family: JosefinSansFontLight, Sans-serif;
+  color: #0a0a09 !important;
+  font-weight: 400;
+  font-size: 1.3em;
+  line-height: 1em;
+
+}
+
+.faMarker i {
+  color: #9f1b32 !important;
+  padding-right: 0.6em;
+
+}
+
+.faMarker p:hover {
+  color: #9f1b32 !important;
+  cursor: pointer;
+
+}
+
+.mapImg iframe {
+  position: relative;
+  height: 20em;
+  width: 42em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 0.6em solid white;
+}
+
+.imgAddress {
+  height: 8em;
+  width: 25em;
+  background: white;
+  position: absolute;
+  top: 1.2em;
+  left: 10em;
+  font-size: 0.8em;
+  padding: 0.4em;
+  color: #858585;
+}
+
+.Address {
+  font-size: 1.2em !important;
+  font-weight: 600;
+  color: black !important;
+}
+
+.dirImg {
+  box-shadow: none !important;
+}
+
+/* .dirImg, */
+.hov:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hov1 {
+  padding-left: 2.9em;
+}
+
+.dirImg {
+  position: absolute;
+  top: 0em;
+  left: 19.5em;
+}
+
+.footer {
+  height: 6em;
+  width: 120em;
+  background-color: #000000;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
 }

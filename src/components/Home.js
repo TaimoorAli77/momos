@@ -7,6 +7,8 @@ import Food from './Food';
 import Carousol from './Carousol';
 import Reviews from './Reviews';
 import OrderNowTwo from './order/OrderNowTwo';
+import Footer from './order/Footer';
+import Arrow from './Arrow';
 const Home = () => {
   return (
     <React.Fragment>
@@ -15,8 +17,7 @@ const Home = () => {
         <OrderNow />
 
       </div>  <div>
-        <i class="fa-solid fa-angle-up scrolledArrow"></i>
-
+      <Arrow fa="fa-solid fa-angle-up scrolledArrow1 scrolledArrow"/>
 
         </div>
      
@@ -39,7 +40,9 @@ const Home = () => {
 <div>
   <OrderNowTwo />
 </div>
-
+<div>
+  <Footer />
+</div>
     </React.Fragment>
   );
 }
