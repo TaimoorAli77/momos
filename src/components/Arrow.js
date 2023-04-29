@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 const Arrow = (props) => {
   return (
     <div>
-      <a target="_blank" href={props.url}><i class={props.fa}></i></a>
+      <Link target={props.target} to={props.url}><i className={props.fa} /></Link>
     </div>
   );
 }

@@ -10,7 +10,6 @@ import fiveRe from '../images/5.png'
 import sixRe from '../images/6.png'
 import sevenRe from '../images/7.png'
 import eightRe from '../images/8.png'
-
 import googleG from '../images/g.png'
 
 const Reviews = () => {
@@ -94,9 +93,9 @@ const Reviews = () => {
                         <div className="col-md-7">
                         <div id="box-2" className="owl-carousel">
 
-                                {customerReviews && customerReviews.map((item, index) => {
-                                    return <div className="box">
-                                        <img className="d-inline custImg" key={index} src={item.Customer_img} alt="customer-img" />
+                                { customerReviews.map((item, index) => {
+                                    return <div className="box" key={index}>
+                                        <img className="d-inline custImg"  src={item.Customer_img} alt="customer-img" />
                                         <h5 className="d-inline custName">{item.Customer_Name.length > 10 ? item.Customer_Name.slice(0, 11) + "..." : item.Customer_Name}</h5>
                                         <p className="custDatePost">{item.Date}</p>
                                         <img className="d-inline gImg" src={googleG} alt="googel-img" />

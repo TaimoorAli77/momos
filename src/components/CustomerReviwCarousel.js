@@ -1,6 +1,6 @@
 import React from 'react';
 import stars from '../images/f.svg'
-const customerReviwCarousel = () => {
+const CustomerReviwCarousel = () => {
   return (
     <div>
       <div className="containr pt-5 mt-5">
@@ -30,4 +30,4 @@ const customerReviwCarousel = () => {
   );
 }
 
-export default customerReviwCarousel;
+export default CustomerReviwCarousel;

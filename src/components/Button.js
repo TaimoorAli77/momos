@@ -1,9 +1,9 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Button = (props) => {
   return (
     <div>
-     <button className="btn btn-danger btn-lg" type="submit">{props.btn}</button> 
+     <Link className="btn btn-danger" type="submit" to={props.url} >{props.btn}</Link> 
     </div>
   );
 }
