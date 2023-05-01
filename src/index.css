@@ -39,6 +39,7 @@
   width: 100%;
   background-color: #fff;
   transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 0.6px 0px 0 rgba(0,0,0,.2);
 }
 
 .navbar.scrolled {
@@ -479,3 +480,28 @@
   height: 7em;
   width: 8em;
 }
+
+.deliverooTwo{
+  height: 13em;
+  width: 80em;
+}
+.menuS{
+  font-size: 3.2em;
+  font-family: JosefinSansFontLight, Sans-serif;
+
+}
+.deliverooTwo .deliveroo{
+  height: 6em !important;
+  width: 6em !important;
+  margin: 0.6em;
+}
+
+/* ...
+ */
+
+ .capiccino{
+  /* border: 2px solid black dotted; */
+  border-style: dotted;
+  padding: 0.5em;
+  height: 3em !important;
+ }
