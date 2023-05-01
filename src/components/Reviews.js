@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import googleImg from '../images/logo.svg'
 import star from '../images/f.svg'
 import halfStar from '../images/h.svg'
@@ -12,8 +12,28 @@ import sevenRe from '../images/7.png'
 import eightRe from '../images/8.png'
 import googleG from '../images/g.png'
 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 const Reviews = () => {
-
+    const responsive = {
+        superLargeDesktop: {
+          breakpoint: { max: 4000, min: 3000 },
+          items: 3,
+    
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 3
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
     const customerReviews = [{
         "Customer_img": sixRe,
         "Customer_Name": "Muhammad Pate",
@@ -62,6 +82,12 @@ const Reviews = () => {
         "Content": "Best coffee and momo.. Friendly staff and good service.."
     }]
 
+
+    const [isopen, setIsopen] = useState(false);
+    const handleClick = () => {
+        setIsopen(!isopen);
+    }
+
     return (
         <React.Fragment>
 
@@ -86,16 +112,24 @@ const Reviews = () => {
 
                                     <p className="inlin  text-center">based on </p><h3 className=" inlin fs-5">39 reviews</h3>
                                 </div>
-
                             </div>
-
                         </div>
                         <div className="col-md-7">
-                        <div id="box-2" className="owl-carousel">
-
-                                { customerReviews.map((item, index) => {
+                        <div className="gd-carousel-wrapper">
+                            <Carousel
+            //   infinite
+            //   autoPlay={true}
+            arrows={true}
+            renderDotsOutside={true}
+            draggable={true}
+            autoPlay={false}
+            showDots={false}
+            ssr={true}
+            //   autoPlaySpeed={2000}
+              responsive={responsive} id="box-2" className="owl-carousel">
+                                {customerReviews.map((item, index) => {
                                     return <div className="box" key={index}>
-                                        <img className="d-inline custImg"  src={item.Customer_img} alt="customer-img" />
+                                        <img className="d-inline custImg" src={item.Customer_img} alt="customer-img" />
                                         <h5 className="d-inline custName">{item.Customer_Name.length > 10 ? item.Customer_Name.slice(0, 11) + "..." : item.Customer_Name}</h5>
                                         <p className="custDatePost">{item.Date}</p>
                                         <img className="d-inline gImg" src={googleG} alt="googel-img" />
@@ -111,15 +145,20 @@ const Reviews = () => {
                                             <p className="customer-review">
                                                 {item.Content.length > 90 ? item.Content.slice(0, 90) + "..." : item.Content}
                                             </p>
-                                            {item.Content.length > 90 ? <button className="btn btnReadMore" onClick={ ()=>item.Content} type="button">Read more</button>: ""}
+                                            {item.Content.length > 90 ? <button className="btn btnReadMore" onClick={() => { handleClick() }} type="button">Read more</button>
+                                                : ""}
+                                            <p>
+                                                { }
+                                            </p>
                                         </div>
                                     </div>
-                                
-                                })}</div>
-                            </div>
+
+                                })}</Carousel>
+                                </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </React.Fragment>
     );

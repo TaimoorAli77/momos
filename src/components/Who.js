@@ -2,7 +2,7 @@ import React from 'react';
 import ourStoryImg1 from '../images/BeFunky-collage-1-1024x1024.jpg'
 const Who = () => {
   return (
-    <div className='ourStory pt-5 mt-5 text-center' >
+    <div className='ourStory pt-5 mt-5 text-center' id='who' >
       <div className="container">
         <div className="container-fluid pt-5">
           <div className="row">

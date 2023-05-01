@@ -1,17 +1,26 @@
 import React from 'react';
 // import Button from './Button';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import UberEats from './UberEats';
 
 const Food = () => {
   return (
-    <div className='text-center p-3'>
-      <h1 className='text-center food '> Our Food</h1>
-      <div className="pl-5 pb-5 text-center">
-      {/* <Button  btn="See Our Menu" url="/menu"/> */}
-      <Link className="btn btn-danger " type="submit" to="/menu" >See Our Menu</Link> 
+    <div>
+      <h1 className='text-center food ' id='food'> Our Menu</h1>
       
+      {/* <div className="container  ">
+        <div className="container-fluid">
+          <div className="row">
+<div className="col-md-4">
+<div className="orderToEat">
+
+      <UberEats />
+</div>
+</div>
+          </div>
+          </div>
       
-      </div>
+      </div> */}
     </div>
   );
 }

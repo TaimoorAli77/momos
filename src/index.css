@@ -33,7 +33,7 @@
 .navbar {
   height: 5.3em;
   position: fixed;
-  z-index: 9;
+  z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
@@ -97,9 +97,9 @@
 }
 
 .deliveroo {
-  height: 10em;
-  width: 10em;
-  border: 2px solid black;
+  height: 10em !important;
+  width: 10em !important;
+  border: 2px solid black !important;
   border-radius: 0.3em;
   margin: 20px;
   position: relative;
@@ -145,20 +145,21 @@
 
 }
 
-#box-1 .owl-item img {
+.carouselOne .react-multiple-carousel__arrow {
   display: block;
-  padding-top: 5em;
-}
-
-#box-1 .owl-nav {
   font-size: 3em;
-  border-radius: 20%;
-
+  border-radius: 0% !important;
 }
 
-#box-1 .owl-prev {
+.carouselOne .react-multi-carousel-item img {
+  height: 14em;
+  min-width: 14em;
+  max-width: none;
+}
+
+.carouselOne .react-multiple-carousel__arrow--left {
   position: absolute;
-  left: 0px;
+  left: calc(0% + 0px) !important;
   top: 0px;
   background: rgba(0, 0, 0, 0.5) !important;
   height: 100%;
@@ -166,13 +167,13 @@
   color: white !important;
 }
 
-#box-1 .owl-next {
+.carouselOne .react-multiple-carousel__arrow--right {
   position: absolute;
-  right: 0px;
+  right: calc(0% + 0px) !important;
   top: 0px;
   background: rgba(0, 0, 0, 0.7) !important;
   height: 100%;
-  width: 3.3%;
+  width: 3.3% !important;
   color: white !important;
 }
 
@@ -194,8 +195,8 @@
 }
 
 .scRol {
-  background: #9f1b32 ;
-  color: white ;
+  background: #9f1b32;
+  color: white;
   height: 2.4em;
   width: 2.4em;
   text-align: center;
@@ -224,7 +225,8 @@
 }
 
 .img-inlin {
-  height: 1em;
+  height: 1em !important;
+  width: 1em !important;
   padding-right: 1.5px !important;
 }
 
@@ -303,7 +305,7 @@
   position: absolute;
   top: 0.9em;
   right: 0.6em;
-  height: 1.7em;
+  height: 1.7em !important;
   width: 1.7em !important;
 }
 
@@ -339,26 +341,42 @@
 
 }
 
-#box-2 {
-  position: relative;
-}
 
-#box-2 .owl-nav {
+
+.owl-carousel .react-multiple-carousel__arrow {
+  position: absolute !important;
+  z-index: 99999999 !important;
+
+  background-color: none !important;
   display: block;
   font-size: 3.4em;
   color: #d7d7d7;
 }
-
-#box-2 .owl-prev {
-  position: absolute;
-  top: 30%;
-  left: -0.6em;
+.owl-carousel{
+  position: unset;
 }
+.owl-carousel button.react-multiple-carousel__arrow--left {
+  left: -0.5em !important;
+  top: 41.6%;
+  overflow: hidden;
+  border-radius: 100% !important;
+  height: 30px;
+  width: 30px;
+}
+.gd-carousel-wrapper {
+  position:relative;
 
-#box-2 .owl-next {
-  position: absolute;
-  top: 30%;
-  right: -0.47em;
+}
+.owl-carousel .react-multiple-carousel__arrow--right {
+  top: 43%;
+  right: 6.4% !important;
+  border-radius: 100% !important;
+  height: 30px;
+  width: 30px;
+  margin-right: -1em;
+  overflow: visible !important;
+  z-index: 9999999999999 !important;
+
 }
 
 .orderApps {
@@ -455,4 +473,9 @@
   display: table-cell;
   vertical-align: middle;
   position: relative;
+}
+
+.orderToEat {
+  height: 7em;
+  width: 8em;
 }

@@ -1,7 +1,9 @@
 import React from 'react';
 import logo1 from '../images/logo1.jpg'
 import { Link, useLocation } from "react-router-dom";
-import Button from './Button';
+// import Button from './Button';
+import { HashLink } from 'react-router-hash-link';
+// import Menu from './menu/Menu';
 const NavBar = () => {
     const location = useLocation();
     console.log(location);
@@ -17,20 +19,21 @@ const NavBar = () => {
 
                 <ul className="navbar-nav ms-auto mb-0 mb-lg-0">
                     <li className="nav-item">
-                        <Link className="navbar-brand " style={{ color: location.pathname === '/' ? 'red' : 'black' }} aria-current="page" to="/">Home</Link>
+                        <HashLink className="navbar-brand " style={{ color: location.pathname === '/#home' ? 'red' : 'black' }} aria-current="page"  smooth to="/#home">Home</HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link className="navbar-brand" style={{ color: location.pathname === '/who' ? 'red' : 'black' }} to="/who">Who we are</Link>
+                        <HashLink className="navbar-brand" style={{ color: location.pathname === '/who' ? 'red' : 'black' }} smooth  to="/#who">Who we are</HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link className='navbar-brand' style={{ color: location.pathname === '/food' ? 'red' : 'black' }} to="/food">our Food</Link>
+                        <HashLink className='navbar-brand' style={{ color: location.pathname === '/food' ? 'red' : 'black' }}  smooth to="/#food">our Food</HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? 'red' : 'black' }} to="/menu">menu</Link>
+                        <Link className='navbar-brand' style={{ color: location.pathname === '/Menu' ? 'red' : 'black' }} to="/menu">menu</Link>
                     </li>
+                    
                 </ul>
                 <form className="d-flex mb-1" role="search">
-                    <Button btn="ORDER NOW" url="/"/>
+                  <HashLink className='btn btn-danger' smooth to="/#order" >ORDER NOW</HashLink>
                 </form>
             </div>
         </nav>

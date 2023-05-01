@@ -8,17 +8,18 @@ import Carousol from './Carousol';
 import Reviews from './Reviews';
 import OrderNowTwo from './order/OrderNowTwo';
 import Footer from './order/Footer';
-import Arrow from './Arrow';
+// import Arrow from './Arrow';
+import { HashLink } from 'react-router-hash-link';
 const Home = () => {
   return (
-    <React.Fragment>
-      <div>
-      <div className='EightShapes ' >
+      <div id='home' >
+      <div className='EightShapes' >
         <img className='img1' src={imgSrc} alt='missing' id='/' />
         <OrderNow />
       </div> 
-       <div>
-        <Arrow url="/" fa="fa-solid fa-angle-up scrolledArrow1 scrolledArrow"  />
+       <div >
+      <HashLink smooth to='/#home'><i className="fa-solid fa-angle-up scrolledArrow1 scrolledArrow" /></HashLink>
+
       </div>
       <div className='container'>
         <UberEats />
@@ -29,6 +30,7 @@ const Home = () => {
       <div>
         <Food />
       </div>
+      
       <div>
         <Carousol />
       </div>
@@ -42,7 +44,6 @@ const Home = () => {
         <Footer />
       </div>
       </div>
-    </React.Fragment>
   );
 }
 export default Home;

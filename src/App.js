@@ -1,25 +1,21 @@
-import React from 'react'
+import React, { Suspense, lazy } from "react";
 import NavBar from './components/NavBar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
-import Food from './components/Food';
-import Menu from './components/Menu';
-import Who from './components/Who';
-
+// import Menu from "./components/menu/Menu";
+const Home = lazy(() => Promise.resolve(require("./components/Home")));
+const Menu = lazy(() => Promise.resolve(require("./components/menu/Menu")));
 const App = () => {
   return (
-    <React.Fragment>
       <BrowserRouter>
       <NavBar />
+      <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="/food" element={<Food />} />
-        <Route path="/who" element={<Who />} />
+        <Route index exact path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
       </Routes>
+      </Suspense>
     </BrowserRouter>
     
-    </React.Fragment>
   )
 }
 

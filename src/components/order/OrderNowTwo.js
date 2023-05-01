@@ -4,7 +4,7 @@ import UberEats from '../UberEats';
 // import final from '../../images/final.png'
 const OrderNowTwo = () => {
   return (
-    <div className='orderApps pt-5 '>
+    <div className='orderApps pt-5 ' id='order'>
       <h1 className='textOrder'>Order Now</h1>
 
       <div className="container pt-5">
