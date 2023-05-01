@@ -505,3 +505,10 @@
   padding: 0.5em;
   height: 3em !important;
  }
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #a82932 !important;
+  background-color: white !important;
+}
+.nav-pills .nav-link{
+  color: #000000;
+}

@@ -1,0 +1,250 @@
+{
+     "hotDrinks" : [
+        {
+            "name": "Cappuccino",
+            "price": "£3.10"
+
+        }, {
+            "name": "Latte",
+            "price": "£3.10"
+
+        }, {
+            "name": "Matcha Latte",
+            "price": "£3.10"
+
+        }, {
+            "name": "Turmeric Latte",
+            "price": "£3.10"
+
+        }, {
+            "name": "Beetroot Latte",
+            "price": "£3.10"
+
+        }, {
+            "name": "Blue Matcha Latte",
+            "price": "£3.10"
+
+        }, {
+            "name": "Mocha",
+            "price": "£3.00"
+
+        }, {
+            "name": "Flat White",
+            "price": "£2.75"
+
+        }, {
+            "name": "Americano",
+            "price": "£2.20"
+
+        }, {
+            "name": "Espresso",
+            "price": "£2.50"
+
+        }, {
+            "name": "Cortado",
+            "price": "£2.50"
+
+        }
+    ],
+     "hotDrinksTwo" : [
+        {
+            "name": "Machiatto",
+            "price": "£2.20"
+
+        }, {
+            "name": "Ice/hot tea",
+            "price": "£2.00"
+            
+
+        }, {
+            "name": "Karak Chai",
+            "price": "£2.20"
+
+        }, {
+            "name": "Moroccan Tea",
+            "price": "£2.90"
+
+        }, {
+            "name": "Hot Chocolate",
+            "price": "£3.10"
+
+        }, {
+            "name": "Iced Latte",
+            "price": "£2.75"
+
+        }, {
+            "name": "Iced American",
+            "price": "£3.75"
+
+        }, {
+            "name": "Classic Frappe",
+            "price": "£3.75"
+
+        }, {
+            "name": "Chocolate Frappe",
+            "price": "£3.75"
+
+        }, {
+            "name": "Mocha Frappe",
+            "price": "£3.75"
+
+        }],
+        "breakfast" : [
+           {
+               "name": "Butter Croissant",
+               "price": "£2.10"
+   
+           }, {
+               "name": "Chocolate Croissant",
+               "price": "£2.30"
+               
+   
+           }, {
+               "name": "Almond Croissant",
+               "price": "£2.30"
+   
+           }, {
+               "name": "Pain Au Raisin",
+               "price": "£2.20"
+   
+           }, {
+               "name": "Berry Muffin",
+               "price": "£2.30"
+   
+           }, {
+               "name": "Chocolate Muffin",
+               "price": "£2.30"
+   
+           }, {
+               "name": "Chocolate Chip Cookie",
+               "price": "£1.80"
+   
+           }, {
+               "name": "Belgian Chocolate Cookie",
+               "price": "£1.80"
+   
+           }],
+           "breakfastTwo" : [
+              {
+                  "name": "Postal De Nata",
+                  "price": "£1.80"
+      
+              }, {
+                  "name": "Salmon & Egg Baguette",
+                  "price": "£3.00"
+                  
+      
+              }, {
+                  "name": "Egg Baguette",
+                  "price": "£2.60"
+      
+              }, {
+                  "name": "Egg & Turkey Baguette",
+                  "price": "£2.50"
+      
+              }, {
+                  "name": "Salmon Bagel Cream Cheese",
+                  "price": "£2.50"
+      
+              }, {
+                  "name": "Chicken Puff Pastry",
+                  "price": "£2.60"
+      
+              }, {
+                  "name": "Vegetable Puff Pastry",
+                  "price": "£2.60"
+      
+              }, {
+                  "name": "Egg Puff Pastry",
+                  "price": "£2.60"
+      
+              }],
+              "momos" : [
+                 {
+                     "name": "Chicken Momos",
+                     "price": "£5.50"
+         
+                 }, {
+                     "name": "Beef Momos",
+                     "price": "£6.00"
+                     
+         
+                 }, {
+                     "name": "Lamb Momos",
+                     "price": "£6.00"
+         
+                 }, {
+                     "name": "Prawns Momos",
+                     "price": "£6.00"
+         
+                 }, {
+                     "name": "Paneer Momos",
+                     "price": "£5.50"
+         
+                 }],
+                 "momosTwo" : [
+                    {
+                        "name": "Mushroom & Garlic Momos",
+                        "price": "£5.00"
+            
+                    }, {
+                        "name": "Vegan Momos",
+                        "price": "£5.00"
+                        
+            
+                    }, {
+                        "name": "Chocolate Momos",
+                        "price": "£5.50"
+            
+                    }, {
+                        "name": "Soup Momos",
+                        "price": "£8.50"
+            
+                    }],
+                    "bubbleTeas" : [
+                       {
+                           "name": "Brown Sugar milk",
+                           "price": "£2.20"
+               
+                       }, {
+                           "name": "Luxury Brown sugar milk",
+                           "price": "£2.00"
+                           
+               
+                       }, {
+                           "name": "Brown sugar latte",
+                           "price": "£2.20"
+               
+                       }, {
+                           "name": "Classic Milk Tea Milk",
+                           "price": "£2.90"
+               
+                       }, {
+                           "name": "Mango Milk tea",
+                           "price": "£3.10"
+               
+                       }],
+                       "bubleTeasTwo" : [
+                          {
+                              "name": "Passsion Fruits Milk tea",
+                              "price": "£2.20"
+                  
+                          }, {
+                              "name": "Strawberry Milk Tea",
+                              "price": "£2.00"
+                              
+                  
+                          }, {
+                              "name": "Mango Fruits Tea",
+                              "price": "£2.20"
+                  
+                          }, {
+                              "name": "Lychee FruitsTea",
+                              "price": "£2.90"
+                  
+                          }, {
+                              "name": "Passion Fruit Tea",
+                              "price": "£3.10"
+                  
+                          }]
+}
