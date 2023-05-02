@@ -19,21 +19,22 @@ const NavBar = () => {
 
                 <ul className="navbar-nav ms-auto mb-0 mb-lg-0">
                     <li className="nav-item ">
-                        <HashLink className="navbar-brand " style={{ color: location.hash === '#home' ? 'red' : 'black' }} aria-current="page"  smooth to="/#home">Home</HashLink>
+                        <Link className="navbar-brand "   style={{ color: location.hash === '#home' || (location.pathname === '/' && !location.hash) ? 'red' : 'black' }}
+                            aria-current="page" smooth to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? 'red' : 'black' }} smooth  to="/#who">Who we are</HashLink>
+                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? 'red' : 'black' }} smooth to="/#who">Who we are</HashLink>
                     </li>
                     <li className="nav-item">
-                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? 'red' : 'black' }}  smooth to="/#food">our Food</HashLink>
+                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? 'red' : 'black' }} smooth to="/#food">our Food</HashLink>
                     </li>
                     <li className="nav-item">
                         <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? 'red' : 'black' }} to="/menu">menu</Link>
                     </li>
-                    
+
                 </ul>
                 <form className="d-flex mb-1" role="search">
-                  <HashLink className='btn btn-danger' smooth to="/#order" >ORDER NOW</HashLink>
+                    <HashLink className='btn btn-danger' smooth to="/#order" >ORDER NOW</HashLink>
                 </form>
             </div>
         </nav>
