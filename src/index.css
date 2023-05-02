@@ -490,10 +490,16 @@
   font-family: JosefinSansFontLight, Sans-serif;
 
 }
+.menuS p{
+  font-family: JosefinSansFontLight, Sans-serif;
+
+}
 .deliverooTwo .deliveroo{
   height: 6em !important;
   width: 6em !important;
   margin: 0.6em;
+  font-family: JosefinSansFontLight, Sans-serif;
+
 }
 
 /* ...
@@ -503,12 +509,41 @@
   /* border: 2px solid black dotted; */
   border-style: dotted;
   padding: 0.5em;
-  height: 3em !important;
+  height: 2.7em !important;
+  font-family: JosefinSansFontLight, Sans-serif;
+  font-size: 1.2em;
+
  }
+ 
  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #a82932 !important;
   background-color: white !important;
+  font-family: JosefinSansFontLight, Sans-serif;
+  font-size: 1.2em;
+
 }
 .nav-pills .nav-link{
   color: #000000;
+}
+.capiccinotwo{
+
+  border-style: dotted;
+  padding: 0.5em;
+  height: 3.8em !important;
+  font-family: JosefinSansFontLight, Sans-serif;
+  font-size: 1.1em;
+
+
+}
+.capiccino p{
+color: #920841;
+
+}
+.capiccinotwo p
+{word-spacing: 0.5em;
+color: #920841;
+font-family: JosefinSansFontLight, Sans-serif;
+font-size: 1em;
+line-height: 0px !important;
+padding-top: 10.4px !important;
 }

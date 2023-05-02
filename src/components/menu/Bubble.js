@@ -9,18 +9,27 @@ const HotDrinks = () => {
                     <div className="row justify-content-evenly">
                         <div className="col-md-5     ">
                             {drinks && drinks.bubbleTeas.map((drink,i) => <div className="drinks" id={i}>
-                                <div className=" capiccino my-3">
-                                    <div className=' float-start'>{drink.name}</div>
-                                    <div className=" float-end">{drink.price}</div>
+                                <div className=" capiccinotwo my-3">
+                                    <div className=' float-start pt-2'>{drink.name}</div>
+                                    <div className=" float-end"><p>
+                                       Small    {drink.price}</p>
+                                    <p>
+                                       Large    {drink.price}
+                                        </p></div>
                                 </div>
                             </div>)}
                         </div>
                         <div className="col-md-5">
                             {drinks && drinks.bubleTeasTwo.map((drink, i) => <div className="drinks" id={i}>
-                                <div className=" capiccino my-3">
-                                    <div className=' float-start'>{drink.name}</div>
-                                    <div className=" float-end">{drink.price}
-                                    {drink.price}</div>
+                                <div className=" capiccinotwo my-3">
+                                    <div className=' float-start pt-2'>{drink.name}</div>
+                                    <div className=" float-end "><p>
+                                    Small  {drink.price}</p>
+                                    <p>
+                                    Large  {drink.price}
+                                        </p>
+                                    </div>
+                                        
                                 </div>
                             </div>)}
                         </div>

@@ -11,7 +11,7 @@ const HotDrinks = () => {
                             {drinks && drinks.hotDrinks.map((drink) => <div className="drinks" id={drink.name}>
                                 <div className=" capiccino my-3">
                                     <div className=' float-start'>{drink.name}</div>
-                                    <div className=" float-end">{drink.price}</div>
+                                    <div className=" float-end"><p>{drink.price}</p></div>
                                 </div>
                             </div>)}
                         </div>
@@ -19,7 +19,7 @@ const HotDrinks = () => {
                             {drinks && drinks.hotDrinksTwo.map((drink) => <div className="drinks" id={drink.name}>
                                 <div className=" capiccino my-3">
                                     <div className=' float-start'>{drink.name}</div>
-                                    <div className=" float-end">{drink.price}</div>
+                                    <div className=" float-end"><p>{drink.price}</p></div>
                                 </div>
                             </div>)}
                         </div>
