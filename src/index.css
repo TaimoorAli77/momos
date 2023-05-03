@@ -270,7 +270,9 @@
   height: 30em;
   background: gray;
 }
-
+.alice-carousel__stage img {
+  margin-right: 10px; /* Adds a 10px margin to the right of each image */
+}
 .box {
 
   height: 14em;
@@ -279,6 +281,25 @@
   border-radius: 0.2em;
   position: relative;
 }
+.alice-carousel__prev-btn [data-area]::after{
+  content: attr(data-area);
+  text-transform: capitalize;
+  font-size: 2em;
+  color: chartreuse;
+  position: absolute !important;
+  top: 83px;
+  left: -42px;
+}
+.alice-carousel__next-btn [data-area]::after {
+  content: attr(data-area);
+  text-transform: capitalize;
+  font-size: 2em;
+  color: chartreuse;
+  position: absolute !important;
+  top: 83px !important;
+  right: -42px !important;
+}
+
 
 .custImg {
   position: absolute;
@@ -325,7 +346,9 @@
   text-align: justify;
   text-align: justify;
 }
-
+.paddingCarouselAllice{
+  padding-right: 1.5em;
+}
 .btnReadMore {
   border: none;
   cursor: pointer;

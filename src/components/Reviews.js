@@ -11,29 +11,11 @@ import sixRe from '../images/6.png'
 import sevenRe from '../images/7.png'
 import eightRe from '../images/8.png'
 import googleG from '../images/g.png'
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
 const Reviews = () => {
-    const responsive = {
-        superLargeDesktop: {
-          breakpoint: { max: 4000, min: 3000 },
-          items: 3,
-    
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 3
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
+
     const customerReviews = [{
         "Customer_img": sixRe,
         "Customer_Name": "Muhammad Pate",
@@ -82,11 +64,18 @@ const Reviews = () => {
         "Content": "Best coffee and momo.. Friendly staff and good service.."
     }]
 
-
+    const renderCustomDotsItem = ({ isActive }) => {
+        return <div className={isActive ? 'active' : 'inactive'}></div>;
+    };
     const [isopen, setIsopen] = useState(false);
     const handleClick = () => {
         setIsopen(!isopen);
     }
+    const responsive = {
+        0: { items: 1 },
+        768: { items: 3 },
+        1024: { items: 3 }
+    };
 
     return (
         <React.Fragment>
@@ -94,7 +83,7 @@ const Reviews = () => {
             <div className="container-fluid customerReviewHeight">
                 <div className="container">
                     <div className="row justify-content-center">
-                        <div className="col-md-3 ">
+                        <div className="col-md-4 ">
                             <div className='all-inline p-1 d-flex'>
 
                                 <img className="Googleimg" src={googleImg} alt="Missing Google" />
@@ -114,47 +103,49 @@ const Reviews = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-7">
-                        <div className="gd-carousel-wrapper">
-                            <Carousel
-            //   infinite
-            //   autoPlay={true}
-            arrows={true}
-            renderDotsOutside={true}
-            draggable={true}
-            autoPlay={false}
-            showDots={false}
-            ssr={true}
-            //   autoPlaySpeed={2000}
-              responsive={responsive} id="box-2" className="owl-carousel">
-                                {customerReviews.map((item, index) => {
-                                    return <div className="box" key={index}>
-                                        <img className="d-inline custImg" src={item.Customer_img} alt="customer-img" />
-                                        <h5 className="d-inline custName">{item.Customer_Name.length > 10 ? item.Customer_Name.slice(0, 11) + "..." : item.Customer_Name}</h5>
-                                        <p className="custDatePost">{item.Date}</p>
-                                        <img className="d-inline gImg" src={googleG} alt="googel-img" />
+                        <div className="col-md-7 paddingCarouselAllice">
+                            <div className="gd-carousel-wrapper">
+                                <AliceCarousel
+                                    duration={500}
+                                    startIndex={0}
+                                    fadeOutAnimation={true}
+                                    buttonsDisabled={true}
+                                    autoPlay={true}
+                                    autoPlayInterval={2000}
+                                    renderDotsItem={renderCustomDotsItem}
+                                    stopAutoPlayOnHover={true}
+                                    responsive={responsive}
+                                    direction="rtl" // set the direction to right-to-left
 
-                                        <div className="img-star">
-                                            <img className="img-inlin" src={star} alt="mis" />
-                                            <img className="img-inlin" src={star} alt="mis" />
-                                            <img className="img-inlin" src={star} alt="mis" />
-                                            <img className="img-inlin" src={star} alt="mis" />
-                                            <img className="img-inlin" src={star} alt="mis" />
-                                        </div>
-                                        <div className="custRThoughts">
-                                            <p className="customer-review">
-                                                {item.Content.length > 90 ? item.Content.slice(0, 90) + "..." : item.Content}
-                                            </p>
-                                            {item.Content.length > 90 ? <button className="btn btnReadMore" onClick={() => { handleClick() }} type="button">Read more</button>
-                                                : ""}
-                                            <p>
-                                                { }
-                                            </p>
-                                        </div>
-                                    </div>
+                                    >
+                                    {customerReviews.map((item, index) => {
+                                        return <div className="box" key={index}>
+                                            <img className="d-inline custImg" src={item.Customer_img} alt="customer-img" />
+                                            <h5 className="d-inline custName">{item.Customer_Name.length > 10 ? item.Customer_Name.slice(0, 11) + "..." : item.Customer_Name}</h5>
+                                            <p className="custDatePost">{item.Date}</p>
+                                            <img className="d-inline gImg" src={googleG} alt="googel-img" />
 
-                                })}</Carousel>
-                                </div>
+                                            <div className="img-star">
+                                                <img className="img-inlin" src={star} alt="mis" />
+                                                <img className="img-inlin" src={star} alt="mis" />
+                                                <img className="img-inlin" src={star} alt="mis" />
+                                                <img className="img-inlin" src={star} alt="mis" />
+                                                <img className="img-inlin" src={star} alt="mis" />
+                                            </div>
+                                            <div className="custRThoughts">
+                                                <p className="customer-review">
+                                                    {item.Content.length > 90 ? item.Content.slice(0, 90) + "..." : item.Content}
+                                                </p>
+                                                {item.Content.length > 90 ? <button className="btn btnReadMore" onClick={() => { handleClick() }} type="button">Read more</button>
+                                                    : ""}
+                                                <p>
+                                                    { }
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    })}</AliceCarousel>
+                            </div>
                         </div>
                     </div>
                 </div>

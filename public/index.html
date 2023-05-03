@@ -4,16 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="owl.theme.default.min.css" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/logo1.jpg" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      charset="UTF-8"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link
-    rel="stylesheet"
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Jost&display=swap"
-      />
+    />
 
-      <!--
+    <!--
         Notice the use of %PUBLIC_URL% in the tag above.
         It will be replaced with the URL of the `public` folder during the build.
         Only files inside the `public` folder can be referenced from the HTML.
@@ -36,38 +53,39 @@
         To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-    <script src="https://kit.fontawesome.com/7ed4105cd0.js" crossorigin="anonymous"></script>
-    <script src="bootstrap.bundle.min.js"></script> 
+    <script
+      src="https://kit.fontawesome.com/7ed4105cd0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="jquery.min.js"></script>
     <script src="owl.carousel.min.js"></script>
     <script>
-      $(document).ready(function(){
-        
+      $(document).ready(function () {
         $("#box-1").owlCarousel({
-        loop: true,
-        nav: true,
-        items: 5,
-        margin:0,
-        autoplay:true,
-        autoplayTimeout:1800,
-        autoplayHoverPause:true,
-        dots:false
-      });
+          loop: true,
+          nav: true,
+          items: 5,
+          margin: 0,
+          autoplay: true,
+          autoplayTimeout: 1800,
+          autoplayHoverPause: true,
+          dots: false,
+        });
 
-      $("#box-2").owlCarousel({
-        loop: true,
-        nav: true,
-        items: 3,
-        margin:5,
-        autoplay:true,
-        autoplayTimeout:3500,
-        autoplayHoverPause:true,
-        dots:false,
-        rewind:true,
-        startPosition:7
-
+        $("#box-2").owlCarousel({
+          loop: true,
+          nav: true,
+          items: 3,
+          margin: 5,
+          autoplay: true,
+          autoplayTimeout: 3500,
+          autoplayHoverPause: true,
+          dots: false,
+          rewind: true,
+          startPosition: 7,
+        });
       });
-    });
     </script>
   </body>
 </html>
