@@ -278,7 +278,7 @@
   margin-right: 3px; /* Adds a 10px margin to the right of each image */
 }
 .alice-carousel__prev-btn-item:hover, .alice-carousel__next-btn-item:hover {
-  color: #000;
+  color: red !important;
 }
 .box {
   height: 15em;
@@ -289,6 +289,20 @@
   padding-top: 6em;
   padding-left: 1em;
   padding-right: 1em;
+  transition: transform ease 300ms;
+}
+.box:hover{
+  transform: translate(0, -10px);
+  transform: translate(0, -5px);
+}
+
+.alice-carousel__wrapper{
+
+  padding-top: 1em !important;
+  height: 16em !important;
+}
+.alice-carousel{
+  direction: ltr !important;
 }
 .alice-carousel__prev-btn [data-area]::after{
   content: attr(data-area);
@@ -414,10 +428,6 @@
   height: 60em;
   width: 100%;
   background: #f9f6f0;
-}
-
-.customerReviewHeight {
-  height: 25em;
 }
 
 .textOrder {

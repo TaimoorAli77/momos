@@ -69,7 +69,7 @@ const Reviews = () => {
     };
 
     const responsive = {
-        0: { items: 1 },
+        576: { items: 1 },
         768: { items: 3 },
         1024: { items: 3 }
     };

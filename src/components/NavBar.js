@@ -19,17 +19,17 @@ const NavBar = () => {
 
                 <ul className="navbar-nav ms-auto mb-0 mb-lg-0">
                     <li className="nav-item ">
-                        <Link className="navbar-brand "   style={{ color: location.hash === '#home' || (location.pathname === '/' && !location.hash) ? 'red' : 'black' }}
+                        <Link className="navbar-brand "   style={{ color: location.hash === '#home' || (location.pathname === '/' && !location.hash) ? '#9f1b32' : 'black' }}
                             aria-current="page" smooth="true"  to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? 'red' : 'black' }} smooth="true" to="/#who">Who we are</HashLink>
+                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? '#9f1b32' : 'black' }} smooth="true" to="/#who">Who we are</HashLink>
                     </li>
                     <li className="nav-item">
-                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? 'red' : 'black' }} smooth="true" to="/#food">our Food</HashLink>
+                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? '#9f1b32' : 'black' }} smooth="true" to="/#food">our Food</HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? 'red' : 'black' }} to="/menu">menu</Link>
+                        <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? '#9f1b32' : 'black' }} to="/menu">menu</Link>
                     </li>
 
                 </ul>
