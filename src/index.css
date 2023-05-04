@@ -145,6 +145,9 @@
   padding-top: 2em;
 
 }
+.cardOne{
+  width:45.4em !important;
+}
 
 .carouselOne .react-multiple-carousel__arrow {
   display: block;
@@ -257,9 +260,10 @@
 
 .img-star {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;    
   position: absolute;
-  transform: translate(0.5em, 75px);
+  top: 5em;
+  left: 2em;
 }
 
 .inlin {
@@ -271,21 +275,26 @@
   background: gray;
 }
 .alice-carousel__stage img {
-  margin-right: 10px; /* Adds a 10px margin to the right of each image */
+  margin-right: 3px; /* Adds a 10px margin to the right of each image */
+}
+.alice-carousel__prev-btn-item:hover, .alice-carousel__next-btn-item:hover {
+  color: #000;
 }
 .box {
-
-  height: 14em;
+  height: 15em;
   width: 15em;
   background: #efefef;
   border-radius: 0.2em;
   position: relative;
+  padding-top: 6em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .alice-carousel__prev-btn [data-area]::after{
   content: attr(data-area);
   text-transform: capitalize;
   font-size: 2em;
-  color: chartreuse;
+  color: #dee1e6 !important;
   position: absolute !important;
   top: 83px;
   left: -42px;
@@ -294,10 +303,10 @@
   content: attr(data-area);
   text-transform: capitalize;
   font-size: 2em;
-  color: chartreuse;
+  color: #dee1e6 !important;
   position: absolute !important;
   top: 83px !important;
-  right: -42px !important;
+  right: -35px !important;
 }
 
 
@@ -311,13 +320,15 @@
 
 .custName {
   position: absolute;
-  transform: translate(65px, 18px);
   font-size: 1.1em;
+  top: 1.3em;
+  left: 3.8em;
 }
 
 .custDatePost {
   position: absolute;
-  transform: translate(67px, 40px);
+  top: 3.4em;
+  left: 5.5em;
   color: #848484;
   font-size: 0.8em;
 
@@ -337,18 +348,16 @@
   width: 91%;
   text-align: left;
   color: #2e312e;
-  transform: translate(5%, 151%);
   font-size: 0.9em;
+  padding-top: 1em;
 }
 
-.custRThoughts {
-  display: flex;
-  text-align: justify;
-  text-align: justify;
+
+.gd-carousel-wrapper {
+  position:relative;
+
 }
-.paddingCarouselAllice{
-  padding-right: 1.5em;
-}
+
 .btnReadMore {
   border: none;
   cursor: pointer;
@@ -356,7 +365,8 @@
   position: absolute;
   bottom: 0px;
   font-size: 0.8em;
-
+  position: absolute;
+  bottom: 1.2em;
 
 }
 
@@ -387,10 +397,7 @@
   height: 30px;
   width: 30px;
 }
-.gd-carousel-wrapper {
-  position:relative;
 
-}
 .owl-carousel .react-multiple-carousel__arrow--right {
   top: 43%;
   right: 6.4% !important;
@@ -410,7 +417,7 @@
 }
 
 .customerReviewHeight {
-  height: 29em;
+  height: 25em;
 }
 
 .textOrder {

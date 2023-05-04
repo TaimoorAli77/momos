@@ -10,7 +10,7 @@ const App = () => {
       <NavBar />
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
-        <Route index exact path="/" element={<Home />} />
+        <Route index  path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
       </Routes>
       </Suspense>

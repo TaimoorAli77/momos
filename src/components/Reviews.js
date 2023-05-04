@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import googleImg from '../images/logo.svg'
 import star from '../images/f.svg'
 import halfStar from '../images/h.svg'
@@ -67,10 +67,7 @@ const Reviews = () => {
     const renderCustomDotsItem = ({ isActive }) => {
         return <div className={isActive ? 'active' : 'inactive'}></div>;
     };
-    const [isopen, setIsopen] = useState(false);
-    const handleClick = () => {
-        setIsopen(!isopen);
-    }
+
     const responsive = {
         0: { items: 1 },
         768: { items: 3 },
@@ -103,21 +100,23 @@ const Reviews = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-7 paddingCarouselAllice">
-                            <div className="gd-carousel-wrapper">
+                        <div className="col-md-7 ">
+                            <div className="cardOne">
                                 <AliceCarousel
                                     duration={500}
                                     startIndex={0}
                                     fadeOutAnimation={true}
                                     buttonsDisabled={true}
                                     autoPlay={true}
-                                    autoPlayInterval={2000}
+                                    infinite
+                                    dotsDisabled
+                                    autoPlayInterval={4500}
                                     renderDotsItem={renderCustomDotsItem}
                                     stopAutoPlayOnHover={true}
                                     responsive={responsive}
-                                    direction="rtl" // set the direction to right-to-left
+                                    direction="ltr" // set the direction to right-to-left
 
-                                    >
+                                >
                                     {customerReviews.map((item, index) => {
                                         return <div className="box" key={index}>
                                             <img className="d-inline custImg" src={item.Customer_img} alt="customer-img" />
@@ -132,16 +131,19 @@ const Reviews = () => {
                                                 <img className="img-inlin" src={star} alt="mis" />
                                                 <img className="img-inlin" src={star} alt="mis" />
                                             </div>
-                                            <div className="custRThoughts">
-                                                <p className="customer-review">
-                                                    {item.Content.length > 90 ? item.Content.slice(0, 90) + "..." : item.Content}
-                                                </p>
-                                                {item.Content.length > 90 ? <button className="btn btnReadMore" onClick={() => { handleClick() }} type="button">Read more</button>
-                                                    : ""}
-                                                <p>
-                                                    { }
-                                                </p>
-                                            </div>
+                                            {/* <input id='ch' type='checkbox' /> */}
+                                            <p className="customer-review">
+                                                {item.Content.length > 90 ? item.Content.slice(0, 90) + "..." : item.Content}
+
+                                            </p>
+                                            {item.Content.length > 90 ? <button for="ch" className="btn btnReadMore" type="button">Read more</button> : ''}
+
+                                            {/* <div className="content">
+                                                    <p>
+                                                        {item.Content.length < 90 && item.Content.slice(90, 150)}  
+                                                        <label for="ch" className="btn btnReadMore" type="button">Read less</label>
+                                                    </p>
+                                                </div> */}
                                         </div>
 
                                     })}</AliceCarousel>
