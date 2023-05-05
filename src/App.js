@@ -7,7 +7,7 @@ const Menu = lazy(() => Promise.resolve(require("./components/menu/Menu")));
 const App = () => {
   return (
       <BrowserRouter>
-      <NavBar />
+      <NavBar home="Home" who="Who we are" food="our Food" menu="menu" order="ORDER NOW"/>
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route index  path="/" element={<Home />} />

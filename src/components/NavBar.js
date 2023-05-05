@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 // import Button from './Button';
 import { HashLink } from 'react-router-hash-link';
 // import Menu from './menu/Menu';
-const NavBar = () => {
+const NavBar = (props) => {
     const location = useLocation();
     console.log(location);
     return (
@@ -19,22 +19,22 @@ const NavBar = () => {
 
                 <ul className="navbar-nav ms-auto mb-0 mb-lg-0">
                     <li className="nav-item ">
-                        <Link className="navbar-brand "   style={{ color: location.hash === '#home' || (location.pathname === '/' && !location.hash) ? '#9f1b32' : 'black' }}
-                            aria-current="page" smooth="true"  to="/">Home</Link>
+                        <Link className="navbar-brand " style={{ color: location.hash === '#home' || (location.pathname === '/' && !location.hash) ? '#9f1b32' : 'black' }}
+                            aria-current="page" smooth="true" to="/">{props.home}</Link>
                     </li>
                     <li className="nav-item">
-                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? '#9f1b32' : 'black' }} smooth="true" to="/#who">Who we are</HashLink>
+                        <HashLink className="navbar-brand" style={{ color: location.hash === '#who' ? '#9f1b32' : 'black' }} smooth="true" to="/#who">{props.who}</HashLink>
                     </li>
                     <li className="nav-item">
-                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? '#9f1b32' : 'black' }} smooth="true" to="/#food">our Food</HashLink>
+                        <HashLink className='navbar-brand' style={{ color: location.hash === '#food' ? '#9f1b32' : 'black' }} smooth="true" to="/#food">{props.food}</HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? '#9f1b32' : 'black' }} to="/menu">menu</Link>
+                        <Link className='navbar-brand' style={{ color: location.pathname === '/menu' ? '#9f1b32' : 'black' }} to="/menu">{props.menu}</Link>
                     </li>
 
                 </ul>
                 <form className="d-flex mb-1" role="search">
-                    <HashLink className='btn btn-danger' smooth="true" to="/#order" >ORDER NOW</HashLink>
+                    <HashLink className='btn btn-danger' smooth="true" to="/#order" >{props.order}</HashLink>
                 </form>
             </div>
         </nav>
